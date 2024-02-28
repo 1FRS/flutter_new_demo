@@ -86,7 +86,7 @@ class WelcomePage extends StatelessWidget {
       margin: EdgeInsets.only(bottom: duSetHeight(20)),
       child: ElevatedButton(
         onPressed: (){
-
+            Navigator.pushNamed(context, "/sign-in",);
         },
         child: const Text("Get started"),
       ),

@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   flutter_screenutil: ^5.8.4
+
+  fluttertoast: ^8.2.4
+
+  dio: ^5.4.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -101,3 +105,6 @@ flutter:
           weight: 500
         - asset: assets/fonts/Montserrat-SemiBold.ttf
           weight: 600
+    - family: Iconfont
+      fonts:
+        - asset: assets/fonts/iconfont.ttf

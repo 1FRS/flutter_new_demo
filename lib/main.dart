@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_news/pages/welcome/welcome.dart';
+import 'package:flutter_news/routes.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'global.dart';
+
+void main() =>  runApp(const MyApp());//Global.init().then((value) => ));
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,7 +25,8 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
             ),
-            home: WelcomePage());
+            home: const WelcomePage(),
+            routes: staticRoutes,);
       },
     );
   }
